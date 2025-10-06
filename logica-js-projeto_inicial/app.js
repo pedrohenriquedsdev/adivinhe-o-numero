@@ -19,5 +19,8 @@ while (chute != numeroSecreto) {
     tentativas++;
 }
 
-alert(`Correto! Você acertou o número secreto com ${tentativas} tentativas. Aqui está -> ${numeroSecreto}`);
-
+if (tentativas > 1) {
+    alert(`Correto! Você acertou o número secreto com ${tentativas} tentativas. Aqui está -> ${numeroSecreto}`);
+} else {
+    alert(`Correto! Você acertou o número secreto com ${tentativas} tentativa. Aqui está -> ${numeroSecreto}`);
+}
